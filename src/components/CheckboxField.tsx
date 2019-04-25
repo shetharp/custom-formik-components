@@ -4,6 +4,6 @@ import { Checkbox } from "./Checkbox";
 // ================================================================================
 //  The main component
 // ================================================================================
-export const ConnectedCheckbox = ({ field, form, ...props }) => {
+export const CheckboxField = ({ field, form, ...props }) => {
   return <Checkbox {...field} {...props} />;
 };

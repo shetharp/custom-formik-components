@@ -2,6 +2,7 @@ import * as React from "react";
 import { render } from "react-dom";
 import { ToggleFormik } from "./forms/ToggleFormik";
 import { DisabledFormik } from "./forms/DisabledFormik";
+import { TextInputFormik } from "./forms/TextInputFormik";
 import { Uncontrolled } from "./forms/Uncontrolled";
 
 import "./styles.css";
@@ -33,12 +34,17 @@ function App() {
       <br />
       <h2>These checkboxes are not connected to Formik.</h2>
       <h3>
-        These checkboxes are not controlled components.
+        These are the base checkbox components.
         <br />
         You can use Formik or have another app component handle their state
         management.
       </h3>
       <Uncontrolled />
+
+      <br />
+      <br />
+      <h2>These textboxes are connected to Formik</h2>
+      <TextInputFormik />
     </div>
   );
 }

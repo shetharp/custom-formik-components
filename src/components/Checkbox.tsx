@@ -39,7 +39,7 @@ const CheckboxWrapper = styled.span`
  * Source: https://polished.js.org/docs/#hidevisually
  */
 const NativeCheckbox = styled.input.attrs({ type: "checkbox" })`
-  /* border: 0;
+  border: 0;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
@@ -48,7 +48,7 @@ const NativeCheckbox = styled.input.attrs({ type: "checkbox" })`
   padding: 0;
   position: absolute;
   white-space: nowrap;
-  width: 1px; */
+  width: 1px;
 `;
 
 /** The styled checkbox depends on the native checkbox's :checked CSS selector
@@ -101,14 +101,8 @@ const CheckboxLabel = styled.span`
 `;
 
 // ================================================================================
-//  Helper functions
+//  Helper Components
 // ================================================================================
-// const renderIcon = (isChecked: boolean, isIndeterminate: boolean) => {
-//   if (isIndeterminate) {
-//     return <Icon>&ndash;</Icon>;
-//   }
-//   return <Icon>&#10003;</Icon>;
-// };
 
 export const Icon = ({ isIndeterminate }) => {
   return isIndeterminate ? (
@@ -122,7 +116,6 @@ export const Icon = ({ isIndeterminate }) => {
 //  The main component
 // ================================================================================
 export const Checkbox = ({ label, ...props }: CheckboxProps) => {
-  console.log("Checkbox", props);
   return (
     <LabelWrapper {...props}>
       <CheckboxWrapper {...props}>

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Formik, FormikProps, Field, Form, FieldProps } from "formik";
 import { ShowFormState } from "../components/ShowFormState";
-import { ConnectedCheckbox } from "../components/ConnectedCheckbox";
+import { CheckboxField } from "../components/CheckboxField";
 
 interface ExampleFormValues {
   check1: boolean;
@@ -25,18 +25,18 @@ export const ToggleFormik = props => {
           <ShowFormState values={formikBag.values} />
           <Field
             name="check1"
-            component={ConnectedCheckbox}
+            component={CheckboxField}
             label="1 Default behavior"
           />
           <Field
             name="check2"
-            component={ConnectedCheckbox}
+            component={CheckboxField}
             label="2 Checked by default"
             defaultChecked
           />
           <Field
             name="check3"
-            component={ConnectedCheckbox}
+            component={CheckboxField}
             label="3 Has indeterminate state"
             indeterminate
           />
