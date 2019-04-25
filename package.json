@@ -1,7 +1,7 @@
 {
-  "name": "new",
+  "name": "custom-inputs-with-formik",
   "version": "1.0.0",
-  "description": "",
+  "description": "A demo for keystone/pebble",
   "keywords": [],
   "main": "src/index.tsx",
   "dependencies": {
